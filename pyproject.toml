@@ -15,7 +15,9 @@ dependencies = [
   "matplotlib",
   "scikit-learn",
   "catboost",
-  "xgboost"
+  "xgboost",
+  "dill",
+  "flask"
 ]
 [tool.setuptools.packages.find]
 where = ["src"]

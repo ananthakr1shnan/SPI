@@ -8,9 +8,9 @@ def error_msg_details(error,error_detail:sys):
     )
     return error_msg
 
-class CustomeExeption(Exception):
+class CustomException(Exception):
     def __init__(self,error_message,error_detail:sys):
-        super.___init__(error_message)
+        super().__init__(error_message)
         self.error_message=error_msg_details(error_message,error_detail=error_detail)
         
     def __str__(self):
