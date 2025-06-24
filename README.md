@@ -4,7 +4,7 @@ An **end-to-end Machine Learning project** showcasing a complete ML pipeline fro
 
 ## 🌐 Live Demo
 
-[Click here to open the deployed app](https://studentperfindicator.azurewebsites.net)
+[Click here to open the deployed app](https://studentperfindicator-c0fde0afbaajbkcs.centralindia-01.azurewebsites.net/)
 
 ---
 
