@@ -16,7 +16,7 @@ This project predicts student performance based on academic and demographic feat
 - Deployment-ready Flask API
 - Docker containerization
 - CI/CD using GitHub Actions
-- Live deployment on Azure Web App via Azure Container Registry (ACR)
+- Live deployment on Azure Web App via DockerHub
 
 ---
 
