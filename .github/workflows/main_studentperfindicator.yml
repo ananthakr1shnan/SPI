@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_2ffd18314a0046198bb392b0e1832ca3 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_4dc3e42687cc4facaf90a2a58458fa6e }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_a5c9bf68b8774e5ab386511169fba133 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_99b7e2e100bf4b8797347630c0a9668c }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ffd18314a0046198bb392b0e1832ca3 }}/ananthakrishnank/studperfindicator:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_a5c9bf68b8774e5ab386511169fba133 }}/ananthakrishnank/studperfindicator:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'studentperfindicator'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8419c3b815dc4b0daa7fd7fdb875a98a }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_2ffd18314a0046198bb392b0e1832ca3 }}/ananthakrishnank/studperfindicator:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_29c54aa2ba0a4037aedccf1edeb5f1ad }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_a5c9bf68b8774e5ab386511169fba133 }}/ananthakrishnank/studperfindicator:${{ github.sha }}'
